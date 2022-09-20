@@ -11,7 +11,7 @@ class FishFormModule extends Module {
         submitButton(required: true){ $('#create') }
     }
 
-    void fillInForm( lake = 1, name = 'Jon', type = 'Bream' ) {
+    void fillInForm( lake = 1, name = 'Greta', type = 'Gudgeon' ) {
         lakeSelector.value(lake)
         fishNameInput.value(name)
         fishTypeInput.value(type)
