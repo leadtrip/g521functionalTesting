@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+    <g:if env="test">
+        <meta name="pageId" content="${controllerName}.${actionName}">
+    </g:if>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>

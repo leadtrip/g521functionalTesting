@@ -1,11 +1,11 @@
 package wood.mike
 
-class Fish {
+class Lake {
 
     String name
-    String type
+    String location
 
-    static belongsTo = [lake: Lake]
+    static hasMany = [fish: Fish]
 
     static constraints = {
     }

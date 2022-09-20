@@ -1,4 +1,6 @@
 ---
+server:
+    port: 10002
 grails:
     profile: web
     codegen:
