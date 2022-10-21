@@ -14,10 +14,17 @@ class RandomUiStuffSpec extends GebSpec{
         browser?.quit()
     }
 
-    void "test click a random checkbox"() {
+    void "test click a random checkbox using contains"() {
         when:
             to RandomUiStuffPage
         then:
             $(By.xpath("//*[contains(@id,'inlineCheckbox')]"))[1].click()
+    }
+
+    void "test click a random checkbox using starts with"() {
+        when:
+            to RandomUiStuffPage
+        then:
+            $(By.xpath("//*[starts-with(@id,'inlineCheckbox')]"))[2].click()
     }
 }
